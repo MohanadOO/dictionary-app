@@ -1,7 +1,7 @@
 import NavBar from './components/NavBar'
 import Results from './components/Results'
 
-import { SearchProvider, useSearch } from './hooks/useSearch'
+import { SearchProvider } from './hooks/useSearch'
 import SearchBar from './components/SearchBar'
 
 function App() {

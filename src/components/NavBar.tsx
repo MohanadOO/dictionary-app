@@ -13,7 +13,7 @@ export default function NavBar() {
     ) {
       document.documentElement.classList.add('dark')
       localStorage.setItem('theme', 'dark')
-      setEnabled(true) 
+      setEnabled(true)
     } else {
       document.documentElement.classList.remove('dark')
       localStorage.setItem('theme', 'light')
@@ -43,7 +43,7 @@ export default function NavBar() {
           <Menu>
             <Menu.Button className='flex items-center gap-2'>
               <span className='font-semibold'>Serif</span>
-              <BiChevronDown className='w-7 h-7 fill-purple-400' />
+              <BiChevronDown className='w-7 h-7 fill-cyan-400' />
             </Menu.Button>
             <Transition
               as={Fragment}
@@ -56,12 +56,12 @@ export default function NavBar() {
             >
               <Menu.Items className='flex flex-col gap-2 items-start absolute right-1 top-8 w-32 py-2 px-2  shadow-md rounded-md font-bold z-50 bg-white dark:text-black'>
                 <Menu.Item>
-                  <button className='hover:bg-purple-600 hover:text-white w-full rounded-md text-start py-1 px-4'>
+                  <button className='hover:bg-cyan-600 hover:text-white w-full rounded-md text-start py-1 px-4'>
                     Font 1
                   </button>
                 </Menu.Item>
                 <Menu.Item>
-                  <button className='hover:bg-purple-600 hover:text-white w-full rounded-md text-start py-1 px-4'>
+                  <button className='hover:bg-cyan-600 hover:text-white w-full rounded-md text-start py-1 px-4'>
                     Font 1
                   </button>
                 </Menu.Item>
@@ -75,7 +75,7 @@ export default function NavBar() {
             checked={enabled}
             onChange={handleTheme}
             className={`${
-              enabled ? 'bg-purple-400' : 'bg-gray-600'
+              enabled ? 'bg-cyan-400' : 'bg-gray-600'
             } relative inline-flex h-6 w-12 items-center rounded-full`}
           >
             <span className='sr-only'>Enable Dark Theme</span>

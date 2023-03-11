@@ -16,10 +16,9 @@ export function SearchProvider({ children }: any) {
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-
+    setLoading(true)
     try {
       const res = await fetch(`${baseURL}/${search}`)
-      setLoading(true)
       if (!res.ok) {
         throw Error('Word Not Found')
       }
